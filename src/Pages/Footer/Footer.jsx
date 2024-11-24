@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../../assets/logo.png";
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-10 lg:px-36 px-6">
+    <footer className="bg-gray-800 text-white py-10 lg:px-36 px-6 border-t-2 border-orange-400">
       {/* Footer Top */}
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

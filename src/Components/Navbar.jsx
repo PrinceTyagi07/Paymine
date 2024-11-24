@@ -114,7 +114,7 @@ const Navbar = () => {
                                         {link.link} {apiDropdownOpen ? <FaChevronUp /> : <FaChevronDown />}
                                     </div>
                                     <ul
-                                        className={`absolute z-30 bg-white shadow-lg rounded-md p-2 space-y-1 flex flex-col w-[250%] transition-all duration-700 transform ${apiDropdownOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10 pointer-events-none'}`}
+                                        className={`absolute z-30 bg-white shadow-lg rounded-md p-2 space-y-1 flex flex-col w-[250%] transition-all duration-700  transform ${apiDropdownOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10 pointer-events-none'}`}
                                     >
                                         {apiSolutionItem.map((item, idx) => (
                                             <Link
@@ -160,7 +160,7 @@ const Navbar = () => {
                                         {link.link} {dropdownOpen ? <FaChevronUp /> : <FaChevronDown />}
                                     </div>
                                     {dropdownOpen && (
-                                        <ul className="mt-2 space-y-2 pl-4 w-[120%]  absolute right-44 bg-white py-5 -top-1 transition-all duration-700 ">
+                                        <ul className="mt-2 space-y-2 pl-4 w-[110%]  absolute right-[110%] bg-white py-5 -top-1 transition-all duration-700 ">
                                             {softwareDropdownItems.map((item, idx) => (
                                                 <Link
                                                     to={item.path}
@@ -180,7 +180,7 @@ const Navbar = () => {
                                         {link.link} {apiDropdownOpen ? <FaChevronUp /> : <FaChevronDown />}
                                     </div>
                                     {apiDropdownOpen && (
-                                        <ul className="mt-2 space-y-2 pl-4 w-[120%]  absolute right-44 bg-white py-5 -top-1 transition-all duration-700">
+                                        <ul className="mt-2 space-y-2 pl-4 w-[120%]  absolute right-[110%] bg-white py-5 -top-1 transition-all duration-700">
                                             {apiSolutionItem.map((item, idx) => (
                                                 <Link
                                                     to={item.path}
