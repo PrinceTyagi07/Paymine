@@ -54,7 +54,6 @@ const App = () => {
 
       </Routes>
      <div className="">
-
       <Footer/>
      </div>
      
