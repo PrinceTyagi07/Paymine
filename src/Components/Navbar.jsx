@@ -45,9 +45,11 @@ const Navbar = () => {
 
     const toggleDropdown = () => {
         setDropdownOpen(!dropdownOpen); // Toggle the dropdown
+        setApiDropdownOpen(false); // Toggle API dropdown
     };
-
+    
     const toggleApiDropdown = () => {
+        setDropdownOpen(false); // Toggle the dropdown
         setApiDropdownOpen(!apiDropdownOpen); // Toggle API dropdown
     };
 
@@ -158,7 +160,7 @@ const Navbar = () => {
                                         {link.link} {dropdownOpen ? <FaChevronUp /> : <FaChevronDown />}
                                     </div>
                                     {dropdownOpen && (
-                                        <ul className="mt-2 space-y-2 pl-4 w-[120%]">
+                                        <ul className="mt-2 space-y-2 pl-4 w-[120%]  absolute right-44 bg-white py-5 -top-1 transition-all duration-700 ">
                                             {softwareDropdownItems.map((item, idx) => (
                                                 <Link
                                                     to={item.path}
@@ -178,7 +180,7 @@ const Navbar = () => {
                                         {link.link} {apiDropdownOpen ? <FaChevronUp /> : <FaChevronDown />}
                                     </div>
                                     {apiDropdownOpen && (
-                                        <ul className="mt-2 space-y-2 pl-4 w-[120%]">
+                                        <ul className="mt-2 space-y-2 pl-4 w-[120%]  absolute right-44 bg-white py-5 -top-1 transition-all duration-700">
                                             {apiSolutionItem.map((item, idx) => (
                                                 <Link
                                                     to={item.path}
